@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu Example</title>
+    <style>
+        body { 
+            background:black;
+            margin: 0px;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav{
+            width:100vw;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color:skyblue;
+            color: rgb(0, 0, 142);
+            text-align: center;
+        }
+        nav #button {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color:rgb(0, 0, 142);
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+            margin:0px 50px;
+        }
+        nav #button #o {
+            width:30px;
+            height: 8px;
+            border-radius: 50px;
+            background-color:rgb(24, 142, 182);
+            margin: 2px;
+        }
+        nav #button #t {
+            width:30px;
+            height: 8px;
+            border-radius: 50px;
+            background-color:rgb(24, 142, 182);
+            margin: 2px;
+        }
+        nav #button #th {
+            width:30px;
+            height: 8px;
+            border-radius: 50px;
+            background-color:rgb(24, 142, 182);
+            margin: 2px;
+        }
+        #body {
+            width: 60%;
+            background-color:rgb(24, 142, 182);
+            color: rgb(0, 0, 142);
+            margin-top: 100px;
+            padding: 4em;
+            text-indent: 50px;
+            margin-bottom:100px;
+        }
+        #fade {
+            min-width: 100%;
+            height: 65vh;
+            background: linear-gradient(to top, black, transparent);
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            margin:0px 50px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        #pop{
+            background-color:rgb(0, 0, 142);
+            position: fixed;
+            top: 75px;
+            width: 150px;
+            color: rgb(24, 142, 182);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;
+            left: 0px;
+            visibility: hidden;
+        }
+        #one,#two,#three,#four,#five{
+            border: 1px solid rgb(24, 142, 182);
+            color: rgb(24, 142, 182);
+            width: 150px;
+            font-size:1.5em;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="button" onclick="click();">
+            <div id="o"></div>
+            <div id="t"></div>
+            <div id="th"></div>
+        </div>
+
+        <h1>Hamburger Menu Example</h1>
+
+        <a href="https://portfolio1010.000webhostapp.com/code.html"><h2>Contact</h2></a>
+    </nav>
+
+    <div id="pop">
+        <a href=""><h2 id="one">Link 1</h2></a>
+        <a href=""><h2 id="two">Link 2</h2></a>
+        <a href=""><h2 id="three">Link 3</h2></a>
+        <a href=""><h2 id="four">Link 4</h2></a>
+        <a href=""><h2 id="five">Link 5</h2></a>
+    </div>
+    
+    <div id="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque delectus incidunt odio impedit, aperiam quasi molestiae fugiat. Maiores esse facilis culpa iure suscipit at sit quidem iste doloremque odio, voluptatum excepturi aperiam facere eos est vitae doloribus beatae? Magnam cumque error, accusamus est excepturi quos possimus distinctio obcaecati officiis omnis fugit! Commodi cum error quaerat nisi! Qui officia rerum iste molestiae sint maiores commodi temporibus et eveniet illo, soluta fuga? Voluptate eveniet accusamus tempore, provident, maiores eos laudantium alias enim atque doloribus odio at reiciendis possimus asperiores harum quod, cupiditate pariatur! Et facere, eos magni ipsam accusantium qui aliquid dicta eius blanditiis architecto consequatur! Fuga, est velit ducimus adipisci praesentium quod doloribus optio, vel deleniti, autem sint. Tempore quod deleniti aspernatur iusto eos pariatur quia quibusdam exercitationem, praesentium nostrum! Aut cumque ab laborum pariatur ullam quae deleniti quisquam praesentium. Perferendis velit sit voluptatum culpa repellat impedit eius odio quis est blanditiis ab doloribus, quae dicta odit tempore distinctio officia deserunt dolore totam ex eligendi explicabo quo. Quas esse deleniti deserunt blanditiis nemo atque mollitia fuga rerum officiis. Modi vitae, facere explicabo dolorum pariatur, tenetur harum minus, libero culpa alias eveniet eaque. Eum rem esse aperiam quaerat ut tempore ullam sapiente dolorum dolor. Suscipit perferendis maxime incidunt accusamus soluta asperiores, consequuntur ab amet delectus, nam veritatis vel harum. Doloribus doloremque exercitationem quibusdam. Ducimus assumenda culpa, totam itaque omnis ut laborum eveniet sint ad repellat harum molestias iure vitae sequi, quia perferendis ratione eum consequuntur, quasi incidunt! Dolor et sapiente possimus dignissimos? Necessitatibus accusamus quis est minima esse voluptates, quaerat inventore laboriosam repellat! Illum aliquam odio quam, laboriosam provident earum! Expedita quam ea nobis iste porro quisquam doloremque, in ipsum cupiditate beatae iure sunt magnam fuga consequatur, fugit, explicabo reiciendis dolore? Fugiat ad nihil tenetur perspiciatis ab commodi beatae quisquam expedita. Quae perferendis odio rem ratione, dolores quas non totam, animi impedit, corporis enim ipsum eaque voluptas aut ipsam obcaecati eum blanditiis fuga eius repudiandae nulla illo modi nostrum rerum? Quo velit doloribus labore assumenda sint qui delectus deleniti voluptate aliquam quasi! Mollitia numquam alias iure molestias, maiores provident omnis. Recusandae temporibus pariatur aut placeat ea perspiciatis? Distinctio beatae aut praesentium unde eum, minus culpa rem laborum mollitia cum tempora maxime impedit deleniti laudantium natus corrupti cumque eligendi error ipsa ex. Aliquam itaque, quidem tempora perferendis eius nemo ipsam vitae velit officiis obcaecati ea. Dolore dolor unde illo ipsa voluptatem, repellat repudiandae reprehenderit eos accusamus molestiae quasi necessitatibus, eius hic dolores ut cumque impedit quas tenetur excepturi? Nesciunt velit quia impedit inventore similique architecto quo dolorem excepturi ex tempore quos quasi fuga, suscipit quod animi repellat illum? Sunt ex voluptatibus totam atque inventore, quis magni officiis alias quas sint vero natus consectetur. Molestias praesentium neque consectetur! Reprehenderit, voluptatum provident laboriosam asperiores culpa hic quisquam. Deserunt, architecto sapiente. Iure nam minima similique aliquid perferendis veniam facere minus odio corrupti, quasi magnam sed voluptate. Cumque, quaerat sit! Soluta distinctio provident atque consequatur voluptate fugiat porro quasi exercitationem, illum totam esse repellendus id quam doloremque nesciunt quae eveniet enim ratione magni nam quaerat cumque aut deserunt. Recusandae, rerum vitae architecto tenetur voluptate necessitatibus reiciendis sapiente nostrum rem in amet odit minima aut eveniet asperiores quia, sed est consectetur, atque voluptatum? Nobis doloribus nesciunt ab neque adipisci reprehenderit rem, molestiae repellendus soluta nulla minima non in ut reiciendis provident sequi? Dolore, laboriosam sunt? Aspernatur itaque veritatis quas quae, numquam animi repellendus dignissimos soluta quaerat perspiciatis cumque accusamus recusandae quibusdam, aliquid voluptate veniam libero inventore repellat vel ut dolorem minima adipisci molestiae ipsa. Recusandae accusantium provident quaerat nam consequatur optio culpa, nisi nulla doloribus laudantium repellendus, repellat eius tenetur animi debitis autem maxime inventore at cupiditate minima, ipsa nesciunt eveniet odit. Alias repudiandae nemo culpa, aperiam fugiat minus distinctio eligendi deserunt nostrum numquam obcaecati vel velit dolor nihil suscipit dignissimos? Accusantium tempore deserunt nesciunt aliquam? Iste nobis id dolore, incidunt officiis corrupti unde, et numquam est qui impedit? Possimus blanditiis nesciunt ut cumque facere vero similique accusantium consequatur eos incidunt, quaerat, molestias velit nihil libero! Voluptatum illo veritatis consequatur aut culpa quisquam possimus quis, dolore eligendi eveniet nulla, corporis cumque recusandae eum dolores tempore vitae facere minima qui odit! Maxime dolore cum ipsa omnis modi delectus nobis nam, rem quo possimus distinctio odit esse harum soluta fugit exercitationem quam deleniti pariatur eaque molestiae ratione perferendis, obcaecati deserunt doloribus. Vel fuga amet aut expedita, consequuntur impedit reprehenderit quisquam. Explicabo quaerat sequi voluptatem illum, veritatis exercitationem amet, molestias consequuntur cumque debitis expedita optio. Labore vel doloribus voluptates explicabo totam porro ipsam mollitia rerum dolor consectetur similique dolorem natus tenetur distinctio vero perferendis sit magni nisi debitis nesciunt harum quisquam enim, voluptatibus pariatur. Maxime, quos odit aliquam perferendis maiores eaque, laudantium impedit laborum quidem ducimus pariatur assumenda nihil incidunt molestias molestiae id magnam sed unde animi quis dignissimos tenetur. Autem saepe repudiandae similique deserunt ex veniam? Cupiditate, odio sequi? Expedita tenetur, saepe placeat sequi accusantium velit repudiandae provident ad explicabo minus accusamus, adipisci eveniet debitis corporis vero? Suscipit quod pariatur autem nam nesciunt nisi doloribus eos beatae. Amet excepturi temporibus dolorem molestiae explicabo beatae dolore est dolores saepe voluptatum aspernatur dolor adipisci sunt enim, modi ipsa sapiente ut quaerat soluta error harum eveniet impedit iste repellat. Corporis, accusamus voluptatibus harum ratione consequuntur, distinctio repudiandae quidem inventore reiciendis sit sequi. Nisi cum expedita aspernatur voluptates reprehenderit quas libero est aperiam amet similique ducimus minima laboriosam ex officia tempora illo tempore facilis laudantium natus in doloribus, recusandae debitis unde modi. Rem saepe impedit labore qui, aspernatur aut hic facere reiciendis asperiores, exercitationem est dicta corporis. Natus laudantium sint aliquam doloribus dolores voluptate perspiciatis adipisci possimus quos, placeat necessitatibus quis magnam ipsam ab in soluta doloremque velit sunt tenetur. Quo architecto quia ex repudiandae ipsam sit dolorum neque, enim corrupti distinctio placeat, assumenda expedita quaerat impedit nemo deleniti repellendus amet, eaque nulla ea consequatur veniam dignissimos ab et! Facilis, sint? Voluptatem quod eligendi, dignissimos unde rem, optio sed sapiente deserunt velit nisi maxime perferendis eaque qui, praesentium quas porro! Iusto in quidem dignissimos!</p>
+    </div>
+
+    <div id="fade"></div>
+
+    <script>
+        var button = document.getElementById("button");
+        var buttona = document.getElementById("o");
+        var buttonb = document.getElementById("t");
+        var buttonc = document.getElementById("th");
+        var pop = document.getElementById("pop");
+
+        button.onclick = function() {
+            if(pop.style.visibility == "hidden"){
+                button.style.transform = 'rotate(90deg)';
+                pop.style.visibility = 'visible';
+            } else {
+                button.style.transform = 'rotate(0deg)';
+                pop.style.visibility = 'hidden';
+            }
+        }
+        // buttona.onclick = function() {
+        //     if(pop.style.visibility == "hidden"){
+        //         button.style.transform = 'rotate(90deg)';
+        //         pop.style.visibility = 'visible';
+        //     } else {
+        //         button.style.transform = 'rotate(-90deg)';
+        //         pop.style.visibility = 'hidden';
+        //     }
+        // }
+        // buttonb.onclick = function() {
+        //     if(pop.style.visibility == "hidden"){
+        //         button.style.transform = 'rotate(90deg)';
+        //         pop.style.visibility = 'visible';
+        //     } else {
+        //         button.style.transform = 'rotate(-90deg)';
+        //         pop.style.visibility = 'hidden';
+        //     }
+        // }
+        // buttonc.onclick = function() {
+        //     if(pop.style.visibility == "hidden"){
+        //         button.style.transform = 'rotate(90deg)';
+        //         pop.style.visibility = 'visible';
+        //     } else {
+        //         button.style.transform = 'rotate(-90deg)';
+        //         pop.style.visibility = 'hidden';
+        //     }
+        // }
+    </script>
+
+</body>
+</html>
